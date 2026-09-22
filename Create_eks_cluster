@@ -1,9 +1,10 @@
-eksctl create nodegroup \
-  --cluster demo-cluster \
+eksctl create cluster \
+  --name demo-cluster \
   --region us-east-2 \
-  --name demo-ng \
+  --nodegroup-name demo-ng \
   --node-type t3.small \
   --nodes 1 \
   --nodes-min 1 \
   --nodes-max 2 \
-  --managed
+  --managed \
+  --with-oidc
