@@ -1,0 +1,9 @@
+eksctl create nodegroup \
+  --cluster demo-cluster \
+  --region us-east-2 \
+  --name demo-ng \
+  --node-type t3.small \
+  --nodes 1 \
+  --nodes-min 1 \
+  --nodes-max 2 \
+  --managed
